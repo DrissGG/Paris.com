@@ -1,0 +1,206 @@
+/* Style the navigation bar */
+.navbar {
+    height: 90px;
+    /* ajustez la hauteur selon vos besoins */
+
+    font-size: large;
+}
+
+.navbar ul>li {
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar-brand img {
+    height: 60px;
+    /* ajustez la taille du logo selon vos besoins */
+    width: auto;
+}
+
+
+#nav:hover a {
+    position: relative;
+}
+
+#nav li:hover a:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    /* Corrigé ici */
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #071F32;
+}
+
+
+#monparis:hover a {
+    position: relative;
+}
+
+#monparis:hover a:after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #071F32;
+}
+
+
+
+
+#recherche {
+    width: 130px;
+    height: 40px;
+    background-color: rgb(160, 153, 153);
+    /* overflow: auto; */
+    margin-left: 100px;
+    border-radius: 8px solid rgb(4, 4, 59);
+    cursor: pointer;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+
+}
+
+/* Navbar links */
+#recherche a {
+    float: left;
+    text-align: center;
+    padding: 8px;
+    color: rgb(11, 9, 9);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#recherche:hover {
+    box-shadow: inset 400px 0 0 0 #071F32;
+}
+
+#recherche a:hover {
+    box-shadow: inset 400px 0 0 0 #071F32;
+    color: white;
+}
+
+/* ######  END ###### Style the navigation bar */
+
+
+/* ##### GAUCHE ####### */
+
+section {
+    margin-top: 95px;
+    /* ajuster la marge en fonction de la hauteur de la navbar */
+
+}
+
+.title-acces {
+    font-size: 2rem;
+    margin-block-end: 3px;
+}
+.nosLiens{
+    margin-bottom: 10px;
+}
+.nosLiens a {
+
+    display: block;
+    padding: 10px 20px;
+    font-size: x-small;
+    font-weight: bold;
+
+
+    background-color: #F4F3F3;
+    border-radius: 5px;
+    /* box-shadow: 0px 22px 20px rgba(11, 38, 128, 0.1); ombre */
+    transition: background-color 0.3s ease;
+    width: 200px;
+    text-align: center;
+
+}
+
+#liens1 svg:hover {
+    fill: #7aa9e7;
+}
+
+.carte a {
+    display: block;
+    padding: 10px 20px;
+    font-size: small;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: red;
+
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.carte a:hover {
+    box-shadow: inset 400px 0 0 0 red;
+}
+
+.carte a:hover {
+    box-shadow: inset 400px 0 0 0 red;
+    color: white;
+}
+
+#pass-id {
+    color: black;
+}
+
+#pass-id:hover svg {
+    color: #0A3D62;
+}
+
+#travaille-paris {
+    color: black;
+}
+
+#travaille-paris:hover svg {
+    color: #0A3D62;
+}
+
+
+
+
+
+
+
+
+/* ############# END GAUCHE ################### */
+
+/* ##### CENTRE ####### */
+.desc-paris {
+    position: relative;
+    top: -50px; /* ajustez la valeur selon votre besoin */
+    left: 100px; /* ajustez la valeur selon votre besoin */
+    background-color: #ffffff; /* définit la couleur de fond en blanc */
+    color: #000000; /* définit la couleur de texte en noir */
+    
+  }
+  
+  
+
+   
+  
+
+
+
+
+/* ##### DROIT ####### */
+
+
+  
+  .sectiondroite {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  

@@ -18,7 +18,7 @@
 
 <body>
     <!-- Barre de navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light" style="background-color: lightcyan;">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light" style="background-color: lightcyan;">
         <a href="#" class="px-3"><img src="./images/Paris_Logo-1536x405.webp" alt="Logo de Paris" height="30em"></a>
         <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
             <span class="navbar-toggler-icon"></span>
@@ -35,27 +35,35 @@
                         faire à Paris ?</a></li>
                 <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase px-3" href="#">Jeux
                         2024</a></li>
+
+                <li class="nav-item" id="recherche">
+                    <form action="#" method="GET" class="d-flex ms-auto">
+                        <button type="submit" class="btn btn-outline-success">
+                            <svg class="d-flex align-items-center" xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                        <input class="form-control me-2 " type="search" name="search" placeholder="Recherche">
+                    </form>
+                </li>
+                <li class="nav-item " id="monparis"><a class="nav-link text-dark font-weight-bold text-uppercase px-3"
+                        href="#"><span class="paris-header-nav-link-text">Mon Paris</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                        </svg></a>
+                </li>
             </ul>
-            <form action="#" method="GET" class="d-flex ms-auto">
-                <button type="submit" class="btn btn-outline-success"><svg class="d-flex align-items-center"
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-search" viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg>
-                </button>
-                <input class="form-control me-2 " type="search" name="search" placeholder="Recherche">
 
 
-
-
-            </form>
-            <button class="btn btn-primary" type="button"><span class="paris-header-nav-link-text">Mon Paris</span>
+            <!-- <button class="btn btn-primary" type="button"><span class="paris-header-nav-link-text">Mon Paris</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                     class="bi bi-person-fill" viewBox="0 0 16 16">
                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
                 </svg>
-            </button>
+            </button> -->
 
         </div>
 
@@ -63,6 +71,7 @@
 
     <main>
         <section>
+            <!-- cote Gauche -->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4 column ">
@@ -92,12 +101,20 @@
                             </svg>BIBLIOTHEQUES
                         </button>
                     </div>
+
+                    <!-- centre  -->
                     <div class="col-md-4 column">
                         <div class=" description">
-                        <img src="./images/image_processing20190925-13569-ommge5.jpg" alt="Image" class="img-fluid">
-                        <h2> Description de l'image</h2>
+                            <img src="./images/image_processing20190925-13569-ommge5.jpg" alt="Image" class="img-fluid">
+                            <h2> Description de l'image
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p></h2>
+                        </div>
+
+
+
                     </div>
-                    </div>
+
+                    <!-- cote Droit -->
                     <div class="col-md-4 column">
                         <ul class="timeline">
                             <li>Événement 1</li>

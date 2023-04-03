@@ -1,7 +1,15 @@
+/* navbar  */
 .nav-link:hover {
     border-top: 5px solid #031f3d;
   }
   
+  #nav ul{
+    display: flex;
+
+  }
+  #recherche{
+    flex-grow: 2; /*agrandir un element */
+  }
   /* Ajouter un peu de marge à droite pour le bouton */
 .btn-primary {
     margin-left: 8px;
@@ -11,15 +19,21 @@
     text-align: center;
   }
 
+
   button[type="submit"] svg {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 2rem;
   }
+#monparis{
+    display: flex;
 
+}
 
-  .column {
+/* cote gauche */
+
+  /* .column {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +46,9 @@
     max-width: 50%;
     height: 3rem;
     margin-right: 2rem;;
-  }
+  } */
+
+  /* centre */
   .description {
     font-size: 2rem;
     text-align: center;
@@ -44,6 +60,12 @@
     margin-top: -10%;
   }
   
+
+
+/* 
+
+/* cote droit  */
+/* 
   .timeline {
     display: flex;
     flex-direction: column;
@@ -93,6 +115,6 @@
   .timeline li.active:before {
     background: white;
   }
-  
+   */ 
   
   
