@@ -1,81 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-        </script>
-
-    <!-- <link rel="stylesheet" href="styles.css">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- -->
-
-
     <title>Paris.fr</title>
 </head>
 
 <body>
+    <!-- Barre de navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light" style="background-color: lightcyan;">
-        <a href="#" class="px-3"><i class="fas fa-anchor text-warning fa-2x">Paris</i></a>
-        <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse justify-content-between" id="nav" >
-            <ul class="navbar-nav " >
-                <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase  px-3 "
+        <a href="#" class="px-3"><img src="./images/Paris_Logo-1536x405.webp" alt="Logo de Paris" height="30em"></a>
+        <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="nav">
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase  px-3"
                         href="#">Services</a></li>
                 <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase  px-3"
                         href="#">Municipalités</a></li>
                 <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase px-3"
-                        href="#">Participez
-                        !</a></li>
+                        href="#">Participez !</a></li>
                 <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase px-3" href="#">Que
-                        faire à
-                        Paris ?</a></li>
+                        faire à Paris ?</a></li>
                 <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase px-3" href="#">Jeux
                         2024</a></li>
             </ul>
-            <form action="form-inline ml-3">
-                <div class="input-group ">
-                    <div class="input-group.append">
-                        <button type="button" class="btn"><i class="fas fa-search text-muted"></i></button>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Search" style="background-color: ghostwhite;">
-                </div>
+            <form action="#" method="GET" class="d-flex ms-auto">
+                <button type="submit" class="btn btn-outline-success"><svg class="d-flex align-items-center"
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </button>
+                <input class="form-control me-2 " type="search" name="search" placeholder="Recherche">
+
+
+
 
             </form>
+            <button class="btn btn-primary" type="button"><span class="paris-header-nav-link-text">Mon Paris</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                </svg>
+            </button>
+
         </div>
 
     </nav>
 
-    
-    <!-- Ajout des fichiers JavaScript de Bootstrap
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script> -->
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 column ">
+                        <button class="btn btn-lg btn-primary "><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                            </svg>PISCINES</button>
 
+
+                        <button class="btn btn-lg btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                            </svg>PARCS, JARDINS ET BOIS
+                        </button>
+                        <button class="btn btn-lg btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                            </svg>MAIRIES D'ARRONDISSEMENT
+                        </button>
+                        <button class="btn btn-lg btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                            </svg>BIBLIOTHEQUES
+                        </button>
+                    </div>
+                    <div class="col-md-4 column">
+                        <div class=" description">
+                        <img src="./images/image_processing20190925-13569-ommge5.jpg" alt="Image" class="img-fluid">
+                        <h2> Description de l'image</h2>
+                    </div>
+                    </div>
+                    <div class="col-md-4 column">
+                        <ul class="timeline">
+                            <li>Événement 1</li>
+                            <li>Événement 2</li>
+                            <li>Événement 3</li>
+                            <li>Événement 4</li>
+                            <li class="active">Événement 5</li>
+                            <li>Événement 6</li>
+                            <li>Événement 7</li>
+                            <li>Événement 8</li>
+                            <li>Événement 9</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

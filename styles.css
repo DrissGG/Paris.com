@@ -1,0 +1,98 @@
+.nav-link:hover {
+    border-top: 5px solid #031f3d;
+  }
+  
+  /* Ajouter un peu de marge à droite pour le bouton */
+.btn-primary {
+    margin-left: 8px;
+    background-color: rgb(24, 12, 137);
+  }
+  ::placeholder {
+    text-align: center;
+  }
+
+  button[type="submit"] svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 2rem;
+  }
+
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .column .btn-primary {
+    background-color: grey;
+    max-width: 50%;
+    height: 3rem;
+    margin-right: 2rem;;
+  }
+  .description {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: -50%;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+  .description h2{
+    margin-top: -10%;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: white;
+    z-index: -1;
+  }
+  .timeline li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px black;
+  }
+  .timeline li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    width: 100%;
+    border-bottom: 2px solid white;
+    z-index: -1;
+  }
+  .timeline li:first-child:before {
+    content: none;
+  }
+  .timeline li.active {
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-shadow: none;
+  }
+  .timeline li.active:before {
+    background: white;
+  }
+  
+  
+  
