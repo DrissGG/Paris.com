@@ -11,7 +11,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="test.css">
     <title>Paris.fr</title>
 </head>
@@ -19,45 +19,47 @@
 <body>
 
     <!-- Barre de navigation -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-        <a href="#" class="px-3"><img src="./images/Paris_Logo-1536x405.webp" alt="Logo de Paris" height="30em"></a>
-        <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="nav">
-            <ul class="navbar-nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase  px-3"
-                        href="#">Services</a></li>
-                <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase  px-3"
-                        href="#">Municipalités</a></li>
-                <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase px-3"
-                        href="#">Participez !</a></li>
-                <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase px-3" href="#">Que
-                        faire à Paris ?</a></li>
-                <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase px-3" href="#">Jeux
-                        2024</a>
-                </li>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light" >
+            <a href="#" class="px-3" ><img src="./images/Paris_Logo-1536x405.webp" alt="Logo de Paris" height="30em"></a>
+            <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="nav">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase  px-3"
+                            href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase  px-3"
+                            href="#">Municipalités</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase px-3"
+                            href="#">Participez !</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase px-3" href="#">Que
+                            faire à Paris ?</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark font-weight-bold text-uppercase px-3"
+                            href="#">Jeux
+                            2024</a>
+                    </li>
 
-                <div class="nav-item " id="recherche">
+                    <div class="nav-item " id="recherche">
 
-                    <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-                    <!-- <input class="form-control me-2 " type="search" name="search" placeholder="Recherche"> -->
+                        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+                        <!-- <input class="form-control me-2 " type="search" name="search" placeholder="Recherche"> -->
 
-                </div>
-        </div>
+                    </div>
+                    <li class="d-flex nav-item justify-content-around" id="monparis">
+                        <a class="nav-link text-dark font-weight-bold text-uppercase " href="#"><span
+                                class="paris-header-nav-link-text " style="margin-right: 20px; ">Mon Paris</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-person-fill" style="margin-right: 20px;" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                            </svg></a>
+                    </li>
+            </div>
 
-        <li class="d-flex nav-item justify-content-around" id="monparis">
-            <a class="nav-link text-dark font-weight-bold text-uppercase " href="#"><span
-                    class="paris-header-nav-link-text " style="margin-right: 20px;">Mon Paris</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-person-fill" style="margin-right: 20px;" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                </svg></a>
-        </li>
-        </ul>
-
-        </div>
-    </nav>
+            
+            
+        </nav>
+    </header>
     <!-- END --- Barre de navigation -->
 
 
@@ -123,12 +125,13 @@
                                 VOIR LA CARTE
                             </a>
                         </div>
+                        <hr style="border-top: 2px solid rgb(160, 153, 153); width: 65%; ">
 
                         <div align="center">
-                            <hr style="border-top: 2px solid rgb(160, 153, 153); width: 90%; ">
+
                             <a id="pass-id"
                                 href="https://www.paris.fr/pages/carte-nationale-d-identite-et-passeport-4825"
-                                style="font-family: Arial, sans-serif;  text-decoration: none;" class="boutonbasgauche">
+                                style="font-family: Arial, sans-serif;  text-decoration: none;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
                                     class="bi bi-person-vcard" viewBox="0 0 16 16" style="margin-right: 40px;">
                                     <path
@@ -138,11 +141,11 @@
                                 </svg>Carte d'identité / <br>Passeport
                             </a>
                         </div>
-
+                        <hr style="border-top: 2px solid rgb(160, 153, 153); width:65%;; ">
                         <div align="center">
-                            <hr style="border-top: 2px solid rgb(160, 153, 153); width: 90%; ">
+
                             <a id="travaille-paris" href="https://www.paris.fr/travailler-a-la-ville-de-paris"
-                                style="font-family: Arial, sans-serif; text-decoration: none;" class="boutonbasgauche">
+                                style="font-family: Arial, sans-serif; text-decoration: none;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
                                     class="bi bi-briefcase-fill" viewBox="0 0 16 16" style="margin-right: 40px;">
                                     <path
@@ -164,20 +167,47 @@
 
 
                     <!-- centre  -->
-                    <div class="col-md-6 column">
-                        <div class="child">
-                            <img src="./images/image_processing20230119-7984-1bt4hel.jpg" class="img-fluid" alt=""
-                                loading="lazy">
-                        </div>
-                        <!-- <div class="desc-paris">Les petits Parisiens dans les starting-blocks pour les Jeux de Paris
-                            2024
-                            Activités périscolaires, ateliers sportifs et artistiques, initiation à <br>la nage et
-                            aux
-                            disciplines paralympliques... Paris <br>profite des prochains Jeux pour...
-                        </div>
-                        <div class="tag">
-                            À la Une
-                        </div> -->
+                    <div class="col-sm-12 col-md-6 column" id="lecentre">
+                        <section>
+                            <div class="child">
+                                <img src="./images/image_processing20230119-7984-1bt4hel.jpg" class="img-fluid " alt=""
+                                    loading="lazy">
+                            </div>
+
+                            <div class="description">
+                                <div class="script-paris">
+                                    
+                                    <h1 class="monH"><B>Les petits Parisiens dans les starting-blocks pour les Jeux de Paris 2024</B></h1>
+                                    <p class="monP">Activités périscolaires, ateliers sportifs et artistiques, initiation à <br>la nage et aux
+                                    disciplines paralympliques... Paris <br>profite des prochains Jeux pour...
+                                    </p>
+                                    <a href="https://www.paris.fr/pages/les-petits-parisiens-dans-les-starting-blocks-pour-les-jeux-de-paris-2024-23026" class="link-une">ALaUne</a>
+                                </div>
+                            </div>
+
+
+                        </section>
+
+
+                        <section>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="image-wrapper">
+                                        <a href="#" class="image-link">SELECTION</a>
+                                        <img src="./images/herbe.jpg" alt="" class="img-fluid" />
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="image-wrapper">
+                                        <a href="#" class="image-link">SELECTION</a>
+                                        <img src="./images/women.jpg" alt="" class="img-fluid" />
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
 
                     </div>
                     <!-- END CENTRE -->
@@ -197,45 +227,42 @@
 
 
                             <div class="couleurecriture">
-                                <p style="font-family: Arial, sans-serif; text-align: left;"  class="img"> 11h30 · <B>Enfants.</B> Hip
-                                    hop et parkour,
-                                    danse et karaté ou encore photo et boxe dans
-                                    le
-                                    19e arrondissement…Pour les vacances de printemps, Paris Sport Vacances propose
-                                    des
-                                    stages
-                                    mixtes « Paris Sport Vacances + Culture » pour les enfants âgés de 7 à 17 ans.
-                                    Découvrez
-                                    ces
-                                    stages qui font dialoguer l'art et le sport <a id="platforme" href="#"> sur la
-                                        plateforme </a> et inscrivez votre
-                                    enfant
+                                <p id="parag1" class="img"> 11h30 ·
+                                    <B>Enfants.</B> Hip hop et parkour, danse et karaté ou encore photo et boxe dans
+                                    le 19e arrondissement…Pour les vacances de printemps, Paris Sport Vacances propose
+                                    des stages mixtes « Paris Sport Vacances + Culture » pour les enfants âgés de 7 à 17
+                                    ans.
+                                    Découvrez ces stages qui font dialoguer l'art et le sport et inscrivez votre enfant
                                     !
                                 </p>
 
-                                <a href="https://www.paris.fr/pages/pratique-encadree-pendant-les-vacances-2291#les-stages-sport-et-culture"
-                                    class="Ensavoirdroite" style="font-family: Arial, sans-serif;">EN SAVOIR +</a>
-                                <img src="./images/boxe.jpg" alt="" class="img-fluid" />
+                                <a id="ensavoir"
+                                    href="https://www.paris.fr/pages/pratique-encadree-pendant-les-vacances-2291#les-stages-sport-et-culture"
+                                    class="Ensavoirdroite" style="font-family: Arial, sans-serif; ">EN SAVOIR +</a>
+                                <div class="img-boxe" style="margin-top: 10px;">
+                                    <img src="./images/boxe.jpg" alt="" class="img-fluid" />
+                                </div>
                                 <div>
                                     <hr style="border-top: 2px solid rgb(160, 153, 153); width: 90%; ">
                                 </div>
-                                
+
                             </div>
 
                         </div>
 
                         <div class="sectiondroite">
                             <div class="suitesectiondroite">
-                                <h2 style="font-family: Arial, sans-serif;" class="img">03.</h2>
-                                <h2 style="font-family: Arial, sans-serif;" class="img">04</h2>
+                                <h1 style="font-family: Arial, sans-serif;" class="img">03.</h1>
+                                <h1 style="font-family: Arial, sans-serif;" class="img">04</h1>
                                 <div
-                                    style="display: inline-block; height: 280px; border-left: 2px solid rgb(160, 153, 153); margin: 0 10px;">
+                                    style="display: inline-block; height: 340px; border-left: 2px solid rgb(160, 153, 153); margin: 0 10px;">
                                 </div>
 
                             </div>
 
                             <div class="couleurecriture">
-                                <p style="font-family: Arial, sans-serif; text-align: left;" class="img"> 11h25 · <B>Autisme. </B> À
+                                <p id="parag1" class="img"> 11h25 ·
+                                    <B>Autisme. </B> À
                                     l'occasion de
                                     la journée
                                     mondiale de la sensibilisation à l'autisme,
@@ -245,11 +272,15 @@
                                     à
                                     leurs familles.
                                 </p>
-                                <a href="https://www.paris.fr/pages/sensibilisation-soutiens-ressources-tout-savoir-sur-l-autisme-17183"
+                                <a id="ensavoir"
+                                    href="https://www.paris.fr/pages/sensibilisation-soutiens-ressources-tout-savoir-sur-l-autisme-17183"
                                     class="Ensavoirdroite" class="tailletext" style="font-family: Arial, sans-serif;">EN
                                     SAVOIR +</a>
-                                <img src="./images/paris-nuit.jpg" alt="" class="img-fluid" />
-                                <hr style="border-top: 2px solid rgb(160, 153, 153); width: 90%; ">
+                                <div class="img-boxe" style="margin-top: 10px;">
+                                    <img src="./images/paris-nuit.jpg" alt="" class="img-fluid" />
+                                </div>
+
+                                <hr style="border-top: 2px solid rgb(160, 153, 153); width: 100%; ">
                             </div>
                         </div>
                     </div>
@@ -261,22 +292,122 @@
     </main>
 
 
-    <footer>
-        <div>
+    <footer class="footer" style="margin-top:220px;" >
+        <div class="col-md-6-fluid order-md-2 " style="width: 100%; ">
+            <div class="row align-items-stretch">
+                <div class="col-md-6" style="background-color: #FEFEFE; width: 50%;" align="center">
+                    <img src="./images/Paris_Logo-1536x405.webp" alt="" style="width: 20%; margin-top: 10px;"
+                        class="img-fluid">
+                    <div class="btn-group dropup">
+                        <button style="margin-top: 10px;background-color: #8a85853e;" type="button"
+                            class="btn btn-lg dropdown rounded-0" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" id="dropupButton">
+                            Mairie de Paris<svg style="margin-left: 50px" xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropupButton">
+                            <a class="dropdown-item" href="#">Mairie de Paris Centre</a>
+                            <a class="dropdown-item" href="#">Mairie du 5ème arrondissement</a>
+                            <a class="dropdown-item" href="#">Mairie du 6ème arrondissement</a>
+                            <a class="dropdown-item" href="#">Mairie du 7ème arrondissement</a>
+                        </div>
+                    </div>
+                
 
+                    <div class="d-flex " id="bloc">
+                        <section class="justify-content-between" align-items:"center">
+                            <a id="lien-f" href="https://en.parisinfo.com/">
+                                <h5>Visit Paris</h5>
+                                <button id="btn" class="justify-content-around">TOURIST OFFICE</button>
+                            </a>
+                        </section>
+                        <div style="border-left: 1px solid grey; height: 60px;  position: relative; top: 40px;"></div>
+
+                        <section class="justify-content-between" align-items:"center">
+                            <a id="lien-f" href="https://opendata.paris.fr/pages/home/">
+                                <h5>Open Data</h5>
+                                <button id="btn" class=" justify-content-around">EN SAVOIR +</button>
+                            </a>
+
+                        </section>
+                        <div style="border-left: 1px solid grey; height: 60px;  position: relative; top: 40px;"></div>
+                        <section class="justify-content-between" align-items:"center">
+                            <a id="lien-f" href="https://www.paris.fr/pages/services-en-ligne-202">
+                                <h5>Démarches</h5>
+                                <button id="btn" class="justify-content-around">SERVICES EN LIGNE</button>
+                            </a>
+                        </section>
+                    </div>
+                    <div>
+                        <hr style="border-top: 2px solid rgb(160, 153, 153); width: 100%; ">
+                    </div>
+                    <div class="cokkies">
+                        <a href="https://www.paris.fr/pages/contact-232">CONTACT</a>
+                        <a href="https://www.paris.fr/pages/mentions-legales-235">PRESSE</a>
+                        <a href="https://www.paris.fr/pages/mentions-legales-235">MENTIONS LEGALES</a>
+                        <a href="https://www.paris.fr/pages/accessibilite-233">ACCESSIBILITE</a>
+                        <a href="https://www.paris.fr/pages/cookies-234">POLITIQUE DE COOKIES</a>
+                        <a href="https://www.paris.fr/pages/plan-du-site-7215">PLAN DU SITE</a>
+                    </div>
+
+                    
+
+                </div>
+                <div class="col-md-6">
+                    <div align="center" class="actualites ">
+                        <form class="actualites-text">
+                            <p style="font-size: 20px;">Recevez chaque semaine l'actualité de votre ville</p>
+                            <input type="email" placeholder="Votre email" style="width: 60%; margin-bottom: 10px;">
+                            <button class="button" type="submit" style="margin-bottom: 10px;">S'abonner</button>
+                            <p style="font-size: 20px;">Suivez-nous sur les réseaux sociaux</p>
+                            <div class="actualites-icons" style="font-size: 30px;">
+                                <a href="https://www.facebook.com/paris%22%3E"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/paris%22%3E"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/paris_maville/%22%3E"><i
+                                        class="fa fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/villedeparis/%22%3E"><i
+                                        class="fa fa-linkedin"></i></a>
+                                <a href="https://www.youtube.com/channel/UC4e6cfcOXGycjRLZbbSwwoA%22%3E"><i
+                                        class="fa fa-youtube"></i></a>
+                            </div>
+                            <p style="font-size: 18px; margin-top: 20px;">Une question ? Contactez-nous sur</p>
+                            <a href="https://twitter.com/Parisjecoute%22%3E"><button class="btn2" type="submit"
+                                    style="margin-top: 1px;">
+                                    @PARISJECOUTE
+                                </button>
+                            </a>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div>
-
-        </div>
-        
     </footer>
+
+
+
+
+
+
+
+
+
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
+
+
+    <!-- Inclure les fichiers JavaScript de jQuery et de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
