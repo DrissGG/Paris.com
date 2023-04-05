@@ -53,13 +53,10 @@
     background-color: #071F32;
 }
 
-
-
-
 #recherche {
     width: 130px;
     height: 40px;
-    background-color: rgb(160, 153, 153);
+    background-color: #4e4e4f2f;
     /* overflow: auto; */
     margin-left: 100px;
     border-radius: 8px solid rgb(4, 4, 59);
@@ -67,7 +64,6 @@
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
-
 }
 
 /* Navbar links */
